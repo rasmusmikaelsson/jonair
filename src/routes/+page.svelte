@@ -333,7 +333,7 @@
     .cardContainer p {
         color: #888888;
         line-height: 1.5em;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .cardContainer a {
@@ -397,8 +397,7 @@
 
     .dCardText p {
         color: var(--p);
-        font-size: 20px;
-        font-weight: 500;
+        font-size: 18px;
         margin: 0;
     }
 
@@ -498,21 +497,20 @@
         color: white;
     }
 
-    @media (min-width: 1920px) {
+    @media (min-width: 1921px) {
         .logo,
         .links,
         .tjansterContainer,
         .dContainer {
             width: 45%;
         }
-    }
 
-    @media (max-width: 1920px) {
-        .logo,
-        .links,
-        .tjansterContainer,
-        .dContainer {
-            width: 60%;
+        .tjansterContainer p {
+            font-size: 20px;
+        }
+
+        .dCardText p {
+            font-size: 20px;
         }
     }
        
