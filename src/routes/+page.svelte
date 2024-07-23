@@ -1,17 +1,23 @@
 <main>
-    <div class="logo">
-        <a href="/"><img src="./logo_white.svg" alt="logo"></a>
+    <div class="logoContainer">
+        <div class="logo">
+            <a href="/"><img src="./logo_white.svg" alt="logo"></a>
+
+            <hr>
+        </div>
     </div>
-    <div class="links" id="links">
-        <ul>
-            <a href="/">Boka</a>
-            <a href="/">Reseinfo</a>
-            <a href="/">Tjänster</a>
-            <a href="/">Luftfartyg</a>
-            <a href="/">Handling</a>
-            <a href="/">Kontakta</a>
-            <a href="/">Om Jonair</a>
-        </ul>
+    <div class="linksContainer">
+        <div class="links" id="links">
+            <ul>
+                <a href="/">Boka</a>
+                <a href="/">Reseinfo</a>
+                <a href="/">Tjänster</a>
+                <a href="/">Luftfartyg</a>
+                <a href="/">Handling</a>
+                <a href="/">Kontakta</a>
+                <a href="/">Om Jonair</a>
+            </ul>
+        </div>
     </div>
     <div class="header">
         <h1>Welcome to Jonair.se</h1>
@@ -149,10 +155,22 @@
 
     /* Navbar */
 
-    .logo {
+    .logoContainer {
+        display: flex;
+        justify-content: center;
         width: 100%;
+        background-color: #000;
+
+    }
+
+    .logoContainer hr {
+        margin: 20px 0 0px 0;
+    }
+
+    .logo {
+        width: 60%;
         box-sizing: border-box;
-        padding: 20px;
+        padding: 20px 20px 0 20px;
         background: black;
     }
 
@@ -160,11 +178,19 @@
         width: 157px;
     }
 
+    .linksContainer {
+        position: sticky;
+        display: flex;
+        justify-content: center;
+        top: 0px;
+        width: 100%;
+        background-color: #000;
+    }
+
     .links {
         box-sizing: border-box;
-        width: 100%;
-        position: sticky;
-        top: 0px;
+        width: 60%;
+        
         background-color: #000;
         z-index: 1000;
         padding: 20px;
@@ -278,7 +304,7 @@
     }
 
     .tjansterContainer {
-        width: 45%;
+        width: 60%;
         display: flex;
         flex-direction: column;
         gap: 100px;
@@ -333,10 +359,10 @@
 
     .dContainer {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         flex-wrap: wrap;
         gap: 60px;
-        width: calc(45% + 60px);
+        width: 60%;
         padding: 0;
     }
 
@@ -396,7 +422,7 @@
         align-items: center;
 
         padding: 40px;
-        width: 45%;
+        width: 60%;
     }
 
     .footerContainer hr {
@@ -470,6 +496,24 @@
 
     .fContact .a a:hover {
         color: white;
+    }
+
+    @media (min-width: 1920px) {
+        .logo,
+        .links,
+        .tjansterContainer,
+        .dContainer {
+            width: 45%;
+        }
+    }
+
+    @media (max-width: 1920px) {
+        .logo,
+        .links,
+        .tjansterContainer,
+        .dContainer {
+            width: 60%;
+        }
     }
        
     :root {
