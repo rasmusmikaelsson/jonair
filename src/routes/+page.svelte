@@ -23,7 +23,7 @@
         <h1>Welcome to Jonair.se</h1>
         <div class="headerContainer">
             <h3>At yorur service, anytime, all the time.</h3>
-            <a href="/">Boka Reguljärflyg</a>
+            <a href="https://jonair.worldticket.net/booking">Boka Reguljärflyg</a>
         </div>
     </div>
     <div class="tjansterText">
@@ -60,42 +60,46 @@
     <div class="destinations">
         <div class="dContainer">
             <div class="dCard">
-                <a href="/"><img src="./ostersund.jpg" alt="Östersund"></a>
+                <div>
+                    <a href="https://jonair.worldticket.net/booking">
+                        <img class="dCardImg" src="./ostersund.jpg" alt="Östersund">
+                    </a>
+                </div>
                 <div class="dCardText">
                     <h3>Umeå - Östersund</h3>
                     <p>Från 695kr</p>
                 </div>
             </div>
             <div class="dCard">
-                <a href="/"><img src="./pajala.jpg" alt="Pajala"></a>
+                <a href="https://jonair.worldticket.net/booking"><img src="./pajala.jpg" alt="Pajala"></a>
                 <div class="dCardText">
                     <h3>Pajala - Luleå</h3>
                     <p>Från 299kr</p>
                 </div>
             </div>
             <div class="dCard">
-                <a href="/"><img src="./gamlastan.webp" alt="Gamla Stan"></a>
+                <a href="https://jonair.worldticket.net/booking"><img src="./gamlastan.webp" alt="Gamla Stan"></a>
                 <div class="dCardText">
                     <h3>Sveg - Arlanda</h3>
                     <p>Från 695kr</p>
                 </div>
             </div>
             <div class="dCard">
-                <a href="/"><img src="./mora.jpg" alt=""></a>
+                <a href="https://jonair.worldticket.net/booking"><img src="./mora.jpg" alt=""></a>
                 <div class="dCardText">
                     <h3>Mora - Arlanda</h3>
                     <p>Från 595kr</p>
                 </div>
             </div>
             <div class="dCard">
-                <a href="/"><img src="./torsby.jpg" alt=""></a>
+                <a href="https://jonair.worldticket.net/booking"><img src="./torsby.jpg" alt=""></a>
                 <div class="dCardText">
                     <h3>Torsby - Arlanda</h3>
                     <p>Från 595kr</p>
                 </div>
             </div>
             <div class="dCard">
-                <a href="/"><img src="./hagfors.webp" alt=""></a>
+                <a href="https://jonair.worldticket.net/booking"><img src="./hagfors.webp" alt=""></a>
                 <div class="dCardText">
                     <h3>Hagfors - Arlanda</h3>
                     <p>Från 595kr</p>
@@ -230,7 +234,7 @@
         width: 100%;
         height: 60vh;
 
-        background: url('./header.jpg');
+        background: url('../header.jpg');
         background-position: center;
         background-size: cover;
     }
@@ -370,6 +374,12 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
+
+        transition: all 0.3s ease-in-out;
+    }
+
+    .dCard:hover {
+        scale: 1.05;
     }
 
     .dCard a img {
@@ -380,6 +390,10 @@
 
         border-radius: 20px;
         box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .dCardImg {
+        /* position: absolute; */
     }
 
     .dCardText {
