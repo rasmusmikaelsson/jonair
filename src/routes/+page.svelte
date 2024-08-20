@@ -20,20 +20,13 @@
         </div>
     </div>
     <div class="header">
-        <h1>Welcome to Jonair.se</h1>
+        <h1>Välkommen till Jonair.se</h1>
         <img src="./header.jpg" alt="headerimg">
         <div class="headerContainer">
             <h3>At yorur service, anytime, all the time.</h3>
             <a href="https://jonair.worldticket.net/booking">Boka Reguljärflyg</a>
         </div>
     </div>
-    <!-- <div class="header">
-        <h1>Welcome to Jonair.se</h1>
-        <div class="headerContainer">
-            <h3>At yorur service, anytime, all the time.</h3>
-            <a href="https://jonair.worldticket.net/booking">Boka Reguljärflyg</a>
-        </div>
-    </div> -->
     <div class="tjansterText">
         <h1>Flyg Äventyr för Alla Smaker</h1>
     </div>
@@ -209,6 +202,7 @@
     }
 
     .links ul {
+        z-index: 1000;
         display: flex;
         gap: 20px;
 
@@ -249,6 +243,7 @@
 
     .header img {
         position: absolute;
+        z-index: -2;
         height: 60vh;
         width: 100%;
         object-fit: cover;
@@ -258,11 +253,11 @@
     .header h1 {
         font-size: 72px;
         color: white;
-        z-index: 2;
+        z-index: -1;
     }
 
     .headerContainer {
-        z-index: 2;
+        z-index: -1;
         display: flex;
         flex-direction: column;
         justify-content: center;
