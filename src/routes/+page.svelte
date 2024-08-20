@@ -234,7 +234,7 @@
         width: 100%;
         height: 60vh;
 
-        background: url('../header.jpg');
+        background-image: url('../header.jpg');
         background-position: center;
         background-size: cover;
     }
